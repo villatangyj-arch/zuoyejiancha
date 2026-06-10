@@ -730,7 +730,7 @@ async function checkHomework() {
     const gradeStr = gradeText(grade);
     const profile  = LS.profile();
     const name     = profile ? profile.name : '同学';
-    const pageNote = currentImages.length > 1 ? `（共${currentImages.length}页，请综合所有页面批改）` : '';
+    const pageNote = currentImages.length > 1 ? `（共${currentImages.length}张图片，请仔细看完所有图片再综合批改，不要遗漏任何一张）` : '';
 
     document.getElementById('checkBtn').style.display  = 'none';
     document.getElementById('loadingPanel').style.display = 'block';
